@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Gymkhana Portal</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <!-- others css -->
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/default-css.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+
+    <div class="page-container sbar_collapsed">
+        <!-- sidebar menu area start -->
+        <div class="sidebar-menu">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="index.html"><img src="assets/images/icon/logo.pngg" alt="logo"></a>
+                </div>
+            </div>
+            <div class="main-menu">
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 626px;"><div class="menu-inner" style="overflow: hidden; width: auto; height: 626px;">
+                    <nav>
+                        <ul class="metismenu" id="menu">
+                            <li class="active">
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>dashboard</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-layout-sidebar-left"></i><span>History</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-pie-chart"></i><span>Users</span></a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-palette"></i><span>Security</span></a>
+                            </li>
+                            <li><a href="help.html"><i class="ti-map-alt"></i> <span>Help</span></a></li>
+                        </ul>
+                    </nav>
+                </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 626px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </div>
+        </div>
+        <!-- sidebar menu area end -->
+
+        <!-- main content area start -->
+        <div class="main-cont">
+            <!-- header area start -->
+            <div class="header-area">
+                <div class="row align-items-center">
+                    <!-- nav, logo -->
+                    <div class="col-md-61 col-sm-8 clearfix pull-left">
+                        <div class="nav-btn pull-left">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="logo pull-left">STUDENTS GYMKHANA PORTAL</div>
+                    </div>
+                    <!-- profile info ,task notification and search button -->
+                    <div class="col-md-6 clearfix">
+
+                        <div class="search-box pull-left">
+                            <form action="#">
+                                <input type="text" name="search" placeholder="Search..." required="">
+                                <i class="ti-search"></i>
+                            </form>
+                        </div>
+                        
+                        <div class="profile-area pull-right noti-mar-left">
+                            <div class="profile-photo">
+                                <div class="btn-group">
+                                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                      <img width="42" class="rounded-circle" src="assets/images/author/avatar.png" alt="">
+                                      <i class="ti-angle-down ml-2 opacity-8"></i>
+                                    </a>
+                                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(-97px, 44px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                      <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                      <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                      <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                      <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                      <div tabindex="-1" class="dropdown-divider"></div>
+                                      <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="profile-name ml-3 header-user-info">
+                              <div class="widget-heading"> Nikhil Meena </div>
+                              <div class="widget-subheading"> Administrator </div>
+                            </div>
+                        </div>
+
+                        <ul class="notification-area pull-right noti-top">
+                            <!-- <li id="full-view"><i class="ti-fullscreen"></i></li>
+                            <li id="full-view-exit"><i class="ti-zoom-out"></i></li> -->
+                            <li class="dropdown">
+                                <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                                    <span>2</span>
+                                </i>
+                                <div class="dropdown-menu bell-notify-box notify-box">
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 435px;"><div class="nofity-list" style="overflow: hidden; width: auto; height: 435px;">
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-comments-smiley btn-info"></i></div>
+                                            <div class="notify-text">
+                                                <p>New Commetns On Post</p>
+                                                <span>30 Seconds ago</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-primary"></i></div>
+                                            <div class="notify-text">
+                                                <p>Some special like you</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="notify-item">
+                                            <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
+                                            <div class="notify-text">
+                                                <p>You have Changed Your Password</p>
+                                                <span>Just Now</span>
+                                            </div>
+                                        </a>
+                                    </div><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 295.203px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- header area end -->
+
+            <!-- page title area start -->
+
+                <!-- Dashboard name start -->
+            <div class="page-title-area">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="page-title pull-left">Dashboard</h4>
+                            <ul class="breadcrumbs pull-left">
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>Dashboard</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Dashboard Name end -->
+
+                <!-- Greeting shit start -->
+            <div class="page-title-area1">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="breadcrumbs-area clearfix">
+                            <h4 class="greeting pull-left">Welcome Back,</h4>
+                            <ul class="breadcrumbs1 pull-left">
+                                <li><span>Nikhil Meena</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!-- <div class="user-profile pull-right">
+                        </div> -->
+                        <div class="btn pull-right">        
+                            <button href="new_form.html" type="button">New Forms</button>
+                            <button href="edit_form.html" type="button">Edit Forms</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Greeting shit end -->
+
+            <!-- page title area end -->
+
+            <!-- Homepage contents Start -->
+            
+
+                <!-- Overview area Start -->
+                <div class="overview">
+                    <div class="todays_req">
+                        <div class="mid">
+                        <!-- <span class="material-symbols-sharp">list</span>                     -->
+                            <h3>Today's Forms</h3>
+                        </div>
+                        <h1>152</h1>
+                        <!-- <small class="text-muted">so far</small> -->
+                    </div>
+                    <div class="yesterdays_req">
+                        <div class="mid">
+                            <!-- <span class="material-symbols-sharp">list</span> -->
+                            <h3>Yesterday's Forms</h3>
+                        </div>
+                        <h1>27</h1>
+                        <!-- <small class="text-muted">so far</small> -->
+                    </div>
+                    <div class="pastweek_req">
+                        <div class="mid">
+                            <!-- <span class="material-symbols-sharp">list</span> -->
+                            <h3>Past Week</h3>
+                        </div>
+                        <h1>83</h1>
+                        <!-- <small class="text-muted">so far</small> -->
+                    </div>
+                    <div class="earlier_req">
+                        <div class="mid">
+                            <!-- <span class="material-symbols-sharp">list</span> -->
+                            <h3>Earlier Forms</h3>
+                        </div>
+                        <h1>148</h1>
+                        <!-- <small class="text-muted">so far</small> -->
+                    </div>
+                </div>
+                <!-- Overview area End -->
+
+                <!-- Forms Info Start -->
+                <div class="recent_forms_heading">
+                    <h2>Recent Forms</h2>
+                    <div class="forms">
+                        
+                        <!-- <div class="shadow">
+                            <div class="side_style"></div>
+                            <span class="form_name">Auditorium</span>
+                            <span class="form_requests" id="audi">105</span>
+                            <span class="sofar">so far</span>
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">15 New requests</span>  
+                        </div>                     -->
+                        
+                        <div class="shadow">
+                            <div class="side_style"></div>
+                            <span class="form_name">Advance Form</span>
+                            <span class="form_requests" id="audi">53</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">12 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col1"></div>
+                            <span class="form_name">Bill Clearance Form</span>
+                            <span class="form_requests" id="audi">34</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">4 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col2"></div>
+                            <span class="form_name">Lecture Hall</span>
+                            <span class="form_requests" id="audi">63</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">27 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col3"></div>
+                            <span class="form_name">Auditorium</span>
+                            <span class="form_requests" id="audi">25</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">6 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col4"></div>
+                            <span class="form_name">VH and Allied facilities</span>
+                            <span class="form_requests" id="audi">147</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">26 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col5"></div>
+                            <span class="form_name">Outreach Auditorium</span>
+                            <span class="form_requests" id="audi">39</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">6 New requests</span>  
+                        </div>                    
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col6"></div>
+                            <span class="form_name">No dues form</span>
+                            <span class="form_requests" id="audi">246</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">58 New requests</span>  
+                        </div>                    
+                        
+                        <!-- <div class="shadow">
+                            <div class="side_style side_col7"></div>
+                            <span class="form_name">Auditorium</span>
+                            <span class="form_requests" id="audi">105</span>
+                            <span class="sofar">so far</span>
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">15 New requests</span>  
+                        </div>                     -->
+                        
+                        <div class="shadow">
+                            <div class="side_style side_col8"></div>
+                            <span class="form_name">Income Form</span>
+                            <span class="form_requests" id="audi">105</span>
+                            <!-- <span class="sofar">so far</span> -->
+                            <div class="watch_icon"></div>
+                            <div class="star_icon"></div>
+                            <span class="new_requests" id="audi_nw">16 New requests</span>  
+                        </div>                    
+                        
+
+                        <!-- <div class="card">
+                            
+                            <div class="name">
+                                <h3>Auditorium</h3>
+                            </div>
+                            <div class="requests">
+                                <h1>152</h1>
+                                <h3>so far</h3>
+                            </div>
+                            <small class="text-muted">17 new requests</small>
+                        </div> -->
+                
+                    </div>
+                    
+                </div>
+                <!-- Forms Info Start -->
+
+        </div>
+            <!-- Homepage contents End -->
+
+    </div>
+    <!-- Main content area end -->
+
+    <!-- Footer -->
+    <footer class=" text-center ">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+        <!-- Section: Links -->
+        <section class="footer_link">
+            <h5 class="footerlnk">About</h5>
+            <h5 class="footerlnk">Privacy</h5>
+            <h5 class="footerlnk">Site</h5>
+            <h5 class="footerlnk">Gallery</h5>
+            <h5 class="footerlnk">Team</h5>
+        </section>
+        <!-- Section: Links -->
+    
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook"></i
+            ></a>
+        
+            <!-- Twitter -->
+            <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+            ></a>
+        
+            <!-- Google -->
+            <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+            ></a>
+        
+            <!-- Instagram -->
+            <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+            ></a>
+        
+            <!-- Github -->
+            <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+            ></a>
+        </section>
+        <!-- Section: Social media --> 
+    
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+                Made with ❤️ by Programming Club,IITK
+            </p>
+        </section>
+        <!-- Section: Text -->
+    
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://www.instagram.com/pclubiitk/">pclubiitk</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+<!-- Scripts -->
+    <script src="https://kit.fontawesome.com/20b8fc8b9c.js" crossorigin="anonymous"></script>
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- others plugins -->
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/scripts.js"></script>
+<!-- Scripts -->
+
+</body>
+</html>
